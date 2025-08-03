@@ -1,1 +1,103 @@
-body { background-image: url(fondo-pantalla/fondo2.png);}
+/* Fondo y fuente general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondo-pantalla/fodo4.png);
+}
+
+/* Encabezado */
+header {
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+/* Título de cada sección */
+section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e1e4b5;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de los logos en cada sección */
+.logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.3); /* Fondo blanco translúcido */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px 0;
+    backdrop-filter: blur(2px); /* Opcional: desenfoque para mejor legibilidad */
+}
+
+/* Contenedor de cada logo y nombre */
+.logo-box {
+    width: 140px;
+    margin: 10px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+
+/* Imágenes de logos con tamaño fijo */
+.logo-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    background: #f4f4f4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 10px 0;
+}
+
+.logo-box img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Nombre de la marca debajo del logo */
+.logo-box p {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 1em;
+}
